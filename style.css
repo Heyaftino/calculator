@@ -19,7 +19,45 @@ body{
     background: #ffffff;
     padding: 20px;
     border-radius: 12px ;
+    
 }
+
+.display {
+	min-height: 200px;
+	padding: 1.5rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	color:black;
+	text-align: right;
+	flex: 1 1 0%;
+}
+
+.display .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	max-width: 100%;
+	overflow: auto;
+    
+}
+
+.display .input {
+	width: 100%;
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.display .output {
+	font-size: 3rem;
+	font-weight: 700;
+	width: 100%;
+	white-space: nowrap;
+}
+
+
+
 .calculator form input{
     border: 0;
     outline: 0;
@@ -56,19 +94,19 @@ body{
     background-color: rgb(194, 194, 206);
     }
 
-.calculator form input.zero{
+#zero{
     width: 170px;
 }
-.calculator form input.eq{
+#eq{
     width: 170px;
     background: rgb(42, 223, 42);
     color: white;
 }
-.calculator form input.plus{
+#plus{
      position: fixed;
      height: 130px;
 }
-.calculator form input.del{
+#del{
     background: red;
     color: white;
 }

@@ -13,45 +13,54 @@
             
             <form >
                 <div class="display">
-                    <input type="text" name="display" class="aff" >
+                    <div class="content">
+                        <div class="input"></div>
+                        <div class="output"></div>
+                    </div>
                 </div>
                 
                 <div>
-                    <input type="button" value="√" onclick="display.value +='√('">
-                    <input type="button" value="(" onclick="display.value +='('">
-                    <input type="button" value=")" onclick="display.value +=')'">
-                    <input type="button" value="%" onclick="display.value +='%'">
+                    <input type="button" value="√" data-key="√" class="key operator">
+                    <input type="button" value="(" data-key="(" class="key">
+                    <input type="button" value=")" data-key=")" class="key">
+                    <input type="button" value="%" data-key="%" class="key action">
                 </div>
                 <div>
-                    <input type="button" value="7" onclick="display.value +='7'">
-                    <input type="button" value="8" onclick="display.value +='8'">
-                    <input type="button" value="9" onclick="display.value +='9'">
-                    <input type="button" value="/" onclick="display.value +='/'">
+                    <input type="button" value="7" data-key="7" class="key">
+                    <input type="button" value="8" data-key="8" class="key">
+                    <input type="button" value="9" data-key="9" class="key">
+                    <input type="button" value="/" data-key="/" class="key operator">
+                </div>
+                <div class = " keys">
+                    <input type="button" value="4" data-key="4" class="key">
+                    <input type="button" value="5" data-key="5" class="key">
+                    <input type="button" value="6" data-key="6" class="key">
+                    <input type="button" value="*"  data-key="*" class="key operator">
+                </div>
+                <div class = " keys" >
+                    
+                    
+                
+                    <input type="button" value ="1" data-key="1" class="key" >
+                    <input type="button" value="2" data-key="2" class="key">
+                    <input type="button" value="3" data-key="3" class="key">
+                    <input type="button" value="-" data-key="-" class="key operator">
                 </div>
                 <div>
-                    <input type="button" value="4" onclick="display.value +='4'">
-                    <input type="button" value="5" onclick="display.value +='5'">
-                    <input type="button" value="6" onclick="display.value +='6'">
-                    <input type="button" value="*" onclick="display.value +='*'">
+                    <input type="button" id="zero" value="0" data-key="0" class="key" >
+                    <input type="button" value="." data-key="." class="key">
+                    <input type="button" id="plus" value="+" data-key="+" class="key oprator">
                 </div>
-                <div>
-                    <input type="button" value ="1" onclick="display.value +='1'">
-                    <input type="button" value="2" onclick="display.value +='2'">
-                    <input type="button" value="3" onclick="display.value +='3'">
-                    <input type="button" value="-" onclick="display.value +='-'">
-                </div>
-                <div>
-                    <input type="button" class="zero" value="0" onclick="display.value +='0'">
-                    <input type="button" value="." onclick="display.value +='.'">
-                    <input type="button" class="plus" value="+" onclick="display.value +='+'">
-                </div>
-                <div>
-                    <input type="button" class="del" value="Del"  onclick="display.value = display.value.toString().slice(0,-1)">
-                    <input type="button" class="eq" value="=" onclick="display.value = eval(display.value)">
+                <div class = "keys">
+                    
+                    <input type="button" id="del" value="Del"  data-key="clear" class="key action"">
+                    <input type="button" id="eq" value="=" data-key="=" class="key operator">
                     
                 </div>
             </form>
         </div>
      </div>
+
+     <script src="main.js"></script>
 </body>
 </html> 
